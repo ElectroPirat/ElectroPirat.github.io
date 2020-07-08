@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=cus&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article id="costam">
+	
+    </article>
+	<div class="naglowek">Dane misji SpaceX</div>
+    <div class="mypanel">loading...</div>
+    
+        <div class="foty">
+            <img class="fota0 fota">
+            <img class="fota1 fota">
+            <img class="fota2 fota">
+            <img class="fota3 fota">
+            <img class="fota4 fota">
+            <img class="fota5 fota">
+            <img class="fota6 fota">
+            <img class="fota7 fota">
+        </div>
+
+    <script>
+        $.getJSON('https://api.spacexdata.com/v3/launches/latest', function(data) {
+                
+        var text = `Numer lotu: ${data.flight_number}<br>
+					Rakieta: ${data.rocket.rocket_name} <br>
+                    Nazwa misji: ${data.mission_name}<br>
+                    Data startu (UTC):<br>
+					${data.launch_date_utc} <br>`
+
+        var imgload0 = `${data.links.flickr_images[0]}`
+        var imgload1 = `${data.links.flickr_images[1]}`
+        var imgload2 = `${data.links.flickr_images[2]}`
+        var imgload3 = `${data.links.flickr_images[3]}`
+        var imgload4 = `${data.links.flickr_images[4]}`
+        var imgload5 = `${data.links.flickr_images[5]}`
+        var imgload6 = `${data.links.flickr_images[6]}`
+        var imgload7 = `${data.links.flickr_images[7]}`
+                    
+        
+        $(".mypanel").html(text);
+
+            $('.fota0').prop("src", imgload0);
+            $('.fota1').prop("src", imgload1);
+            $('.fota2').prop("src", imgload2);
+            $('.fota3').prop("src", imgload3);
+            $('.fota4').prop("src", imgload4);
+            $('.fota5').prop("src", imgload5);
+            $('.fota6').prop("src", imgload6);
+            $('.fota7').prop("src", imgload7);
+
+        //document.getElementById("fota").
+        });
+
+    </script>
+</body>
+</html>
