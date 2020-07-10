@@ -1,11 +1,18 @@
 div.container {
-    height: 10em;
-    position: relative }
-div.container p {
-    margin: 0;
-    background: #e4e4e4;
-    position: absolute;
-    top: 50%;
+    border: 3px solid rgb(126, 126, 126);
+    position: fixed;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+.lonk {
+    background-color: #363636;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+}
