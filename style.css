@@ -1,12 +1,15 @@
 div.container {
     border: 3px solid rgb(126, 126, 126);
-    position: fixed;
+    /*position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px;
+    transform: translate(-50%, -50%);*/
+
+    margin: auto;
+    width: 500px;
+    padding: 5px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 15px;
 }
