@@ -16,7 +16,7 @@
             return results[1] || 0;
         }
         $(document).ready(function(){
-            var ez = $.urlParam('ez');
+            var ez = decodeURIComponent($.urlParam('city'))
 
         $(".ez").html(ez + " to ez");
         });
