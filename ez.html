@@ -6,9 +6,23 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="EZ" />
     <meta property="og:description" content="idk jakiś opis"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>EZ</title>
 </head>
 <body>
+    <script>
+        $.urlParam = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            return results[1] || 0;
+        }
+        $(document).ready(function(){
+            var ez = $.urlParam('ez');
+
+        $(".ez").html(ez + " to ez");
+        });
+    </script>
+
+    <p class='ez'>wczytywanie...</p>
     
 </body>
 </html>
