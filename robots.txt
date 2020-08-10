@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /safedc/system
-Disallow: /safedc/system/bannedUserId.json
