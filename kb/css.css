@@ -1,3 +1,16 @@
 body {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24em;
+    border-radius: 10px;
+}
+
+form {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(118, 187, 255);
+}
+
+.miniwynik {
+    text-align: justify;
 }
