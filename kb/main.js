@@ -1,3 +1,4 @@
+let wejscie = document.getElementsByClassName("input");
 
 function oblicz() {
     //zdobywanie wartości formularza
