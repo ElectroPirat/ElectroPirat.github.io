@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEU</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        body {
+            font-size: 20px;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <input autocomplete="off" onkeyup="odmien()" type="text" id="input">
+    <table>
+        <tr>
+            <th class="ich">ich</th>
+            <td id="_ich" class="_ich">...</td>
+        </tr>    
+        <tr>
+            <th class="du">du</th>
+            <td id="_du" class="_du">...</td>
+        </tr>    
+        <tr>
+            <th class="ersiees">er, sie, es</th>
+            <td id="_ersiees" class="_ersiees">...</td>
+        </tr>    
+        <tr>
+            <th class="wir">wir</th>
+            <td id="_wir" class="_wir">...</td>
+        </tr>    
+        <tr>
+            <th class="ihr">ihr</th>
+            <td id="_ihr" class="_ihr">...</td>
+        </tr>    
+        <tr>
+            <th class="siesie">sie, Sie</th>
+            <td id="_siesie" class="_siesie">...</td>
+        </tr>    
+    </table>
+</body>
+</html>
