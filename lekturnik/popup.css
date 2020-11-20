@@ -1,0 +1,35 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(calc(-50% - .5px));
+
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: rgb(51, 55, 68);
+    color: white;
+
+    z-index: 5;
+}
+
+.popup h2 {
+    font-size: 80px;
+    line-height: 0px;
+}
+.popup h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: rgba(51, 55, 68, 0.842);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekturnik</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body  onload="init()">
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>Hi!</h2>
+        <h4>
+            This website uses cookies. 
+            I'm gonna add them in future and this is placeholder. 
+            Also webpage is in polish so it's just no english :) .
+        </h4>
+        <button onclick="closePopup()">Well, OK</button>
+    </div>
+    <section id="objekty">
+        <form>
+            <label for=""> czas akcji
+                <input type="text">
+            </label>
+            <label for=""> 
+                czas akcji
+                <input type="text">
+                miejsce akcji
+                <input type="text">
+            </label>
+        </form>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>

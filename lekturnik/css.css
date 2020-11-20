@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+form label {
+    background-color: rgb(224, 224, 224);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
