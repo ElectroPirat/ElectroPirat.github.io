@@ -13,7 +13,7 @@
         body {
             background-color: #1b1a25;
         }
-        .ez {
+        #ez {
             font-size: 10vw;
             text-align: center;
             color: white;
@@ -23,19 +23,21 @@
     </style>
 </head>
 <body>
-    <script>
-        $.urlParam = function(name){
-            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-            return results[1] || 0;
-        }
-        $(document).ready(function(){
-            var ez = decodeURIComponent($.urlParam('ez'))
-
-        $(".ez").text(ez + " to ez");
-        });
-    </script>
-
-    <p class='ez'>wczytywanie...</p>
+    <p id='ez'>wczytywanie...</p>
     
+    <script defer>
+        // $.urlParam = function(name){
+        //     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        //     return results[1] || 0;
+        // }
+        // $(document).ready(function(){
+        //     var ez = decodeURIComponent($.urlParam('ez'))
+
+        // $(".ez").text(ez + " to ez");
+        // });
+        const urlParams = new URLSearchParams(window.location.search);
+        const ez = urlParams.get('ez')
+        document.getElementById('ez').innerText = `${ez} to ez`
+    </script>
 </body>
 </html>
