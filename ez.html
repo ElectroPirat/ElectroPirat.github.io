@@ -6,7 +6,6 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="EZ" />
     <meta property="og:description" content="Zobacz kto jest prawdziwym ezem"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>EZ</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -26,15 +25,6 @@
     <p id='ez'>wczytywanie...</p>
     
     <script defer>
-        // $.urlParam = function(name){
-        //     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        //     return results[1] || 0;
-        // }
-        // $(document).ready(function(){
-        //     var ez = decodeURIComponent($.urlParam('ez'))
-
-        // $(".ez").text(ez + " to ez");
-        // });
         const urlParams = new URLSearchParams(window.location.search);
         const ez = urlParams.get('ez')
         document.getElementById('ez').innerText = `${ez} to ez`
