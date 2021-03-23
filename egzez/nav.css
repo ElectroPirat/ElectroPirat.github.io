@@ -1,0 +1,34 @@
+nav {
+    background-color: rgb(248, 248, 248);
+
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 4em;
+    padding: 0;
+
+    border-top: rgb(236, 236, 236) 3px solid;
+}
+nav > ul > li {
+    display: inline;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+nav > ul > li > p {
+    display: inline;
+}
+@media only screen and (max-width: 680px) {
+    nav > ul > li > p {
+        display: none;
+    }
+}
+nav > ul {
+    line-height: 0em;
+    font-size: 2em;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
