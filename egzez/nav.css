@@ -25,6 +25,19 @@ nav.l {
     width: 20vw;
     background-color: #7F39FB;
 }
+
+nav.p {
+    bottom: 0em;
+    left: 0;
+    width: 100vw;
+    background-color: #7F39FB;
+    transition: ease 0.5s;
+}
+nav.p.open {
+    bottom: 4em;
+    background-color: #985EFF;
+}
+
 nav.l > ul > li {
     text-align: left;
     margin-left: 0.5em;
@@ -46,6 +59,18 @@ nav > ul > li > p {
         left: 0;
         width: 100vw;
         background-color: #7F39FB;
+    }
+
+    nav.p {
+        bottom: 4em;
+        left: 0;
+        width: 100vw;
+        background-color: #7F39FB;
+        transition: ease 0.5s;
+    }
+    nav.p.open {
+        bottom: 8em;
+        background-color: #985EFF;
     }
 }
 nav > ul {
