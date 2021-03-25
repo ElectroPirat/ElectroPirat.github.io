@@ -376,8 +376,8 @@
     }
       ],
   "start_url": "/egzez/",
-  "background_color": "#3367D6",
+  "background_color": "#7F39FB",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6"
+  "theme_color": "#7F39FB"
 }
