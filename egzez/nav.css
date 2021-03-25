@@ -27,11 +27,12 @@ nav.l {
 }
 
 nav.p {
-    bottom: 0em;
+    bottom: -28em;
     left: 0;
     width: 100vw;
     background-color: #7F39FB;
     transition: ease 0.5s;
+    height: 28em;
 }
 nav.p.open {
     bottom: 4em;
@@ -62,7 +63,7 @@ nav > ul > li > p {
     }
 
     nav.p {
-        bottom: 4em;
+        bottom: -28em;
         left: 0;
         width: 100vw;
         background-color: #7F39FB;
