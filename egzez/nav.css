@@ -1,13 +1,11 @@
 nav {
-    background-color: rgb(248, 248, 248);
+    background-color: #6200EE;
+    color: white;
 
     position: fixed;
-    bottom: 0;
-    width: 100vw;
+    float: left;
     height: 4em;
     padding: 0;
-
-    border-top: rgb(236, 236, 236) 3px solid;
 }
 nav > ul > li {
     display: inline;
@@ -16,12 +14,38 @@ nav > ul > li {
     text-align: center;
     padding: 0;
 }
+nav.r {
+    bottom: 0;
+    right: 0;
+    width: 80vw;
+}
+nav.l {
+    bottom: 0;
+    left: 0;
+    width: 20vw;
+    background-color: #7F39FB;
+}
+nav.l > ul > li {
+    text-align: left;
+    margin-left: 0.5em;
+}
 nav > ul > li > p {
     display: inline;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 880px) {
     nav > ul > li > p {
         display: none;
+    }
+    nav.r {
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+    }
+    nav.l {
+        bottom: 4em;
+        left: 0;
+        width: 100vw;
+        background-color: #7F39FB;
     }
 }
 nav > ul {
