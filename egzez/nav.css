@@ -10,7 +10,7 @@ nav {
 
     position: fixed;
     float: left;
-    height: 4em;
+    height: 6em;
     padding: 0;
 }
 nav > ul > li {
@@ -19,9 +19,14 @@ nav > ul > li {
     width: 100%;
     text-align: center;
     padding: 0;
+    transition: ease 0.2s;
+}
+nav.r > ul > li:hover {
+    background-color: rgba(76, 0, 130, 0.396);
+    cursor: pointer;
 }
 nav.r {
-    bottom: 0;
+    bottom: 0em;
     right: 0;
     width: 80vw;
 }
@@ -53,8 +58,11 @@ nav > ul > li > p {
     display: inline;
 }
 @media only screen and (max-width: 880px) {
-    nav > ul > li > p {
+    nav > ul > li > div > p.d {
         display: none;
+    }
+    nav {
+        height: 4em;
     }
     nav.r {
         bottom: 0;
@@ -87,4 +95,8 @@ nav > ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+nav.r > ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
