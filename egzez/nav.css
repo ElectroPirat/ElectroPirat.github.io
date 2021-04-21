@@ -88,7 +88,7 @@ nav > ul > li > p {
         background-color: #985EFF;
     }
 }
-nav > ul {
+nav > ul.nav {
     line-height: 0em;
     font-size: 32px;
     padding-left: 0;
