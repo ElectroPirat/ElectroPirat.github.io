@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GG</title>
+    <meta name="title" content="GG">
+    <meta name="description" content="Sprawdź kto jest prawdziwym GGem!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://electropirat.github.io/gg">
+    <meta property="og:title" content="GG">
+    <meta property="og:description" content="Sprawdź kto jest prawdziwym GGem!">
+    <meta property="twitter:url" content="https://electropirat.github.io/gg">
+    <meta property="twitter:title" content="GG">
+    <meta property="twitter:description" content="Sprawdź kto jest prawdziwym GGem!">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        body {
+            background-color: #1b1a25;
+        }
+        #ez {
+            font-size: 10vw;
+            text-align: center;
+            color: white;
+            text-shadow: 0px 0px 3vw rgba(255,255,255,1);
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id='ez'>wczytywanie...</p>
+    
+    <script defer>
+        const urlParams = new URLSearchParams(window.location.search);
+        const ez = urlParams.get('gg')
+        document.getElementById('ez').innerText = `$gg {ez}`
+    </script>
+</body>
+</html>
