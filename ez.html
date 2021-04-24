@@ -36,6 +36,9 @@
         const urlParams = new URLSearchParams(window.location.search);
         const ez = urlParams.get('ez')
         document.getElementById('ez').innerText = `${ez} to ez`
+        if (ez == 'Electru' || ez == 'electru' || ez == 'Electruu' || ez == 'electruu' || ez == 'Electruuu' || ez == 'electruuu') {
+            document.getElementById('ez').innerText = `${ez} to nie ez`
+        }
     </script>
 </body>
 </html>
