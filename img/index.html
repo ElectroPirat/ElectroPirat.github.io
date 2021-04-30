@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG link</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+        </tr>
+        <tr>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+        </tr>
+        <tr>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+        </tr>
+        <tr>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+            <td class="p">⬛</td>
+        </tr>
+    </table>
+    <script defer>
+        const urlParams = new URLSearchParams(window.location.search);
+        const pr = urlParams.get('pr')
+        p = document.getElementsByClassName('p');
+        for (i = 0; i < 16; i++) {
+            console.log(pr[i])
+            if (pr[i] == "1") {
+                p[i].innerText = "⬜";
+            }
+        }
+    </script>
+</body>
+</html>
