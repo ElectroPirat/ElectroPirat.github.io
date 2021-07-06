@@ -6,12 +6,6 @@ var h = 150
 
 ctx.strokeRect(0,0,200,150);
 
-// var testArray = [];
-// for (i = 0; i<1000000; i++) {
-//     testArray.push("fortnite")
-// }
-// console.log(testArray)
-
 var data = new Array(w)
 for (var i = 0; i < data.length; i++) {
     data[i] = new Array(h);
@@ -70,14 +64,11 @@ function next() {
             }
         }
     }
-    //data.splice(0, data.length, ...dataBuffer)
     for (i = 0; i < w; i++) {
         for (i_ = 0; i_ < h; i_++) {
             data[i][i_] = dataBuffer[i][i_]
         }
     }
-    // data.length = 0;                  // Clear contents
-    // data.push.apply(data, dataBuffer);  // Append new contents
 
 }
 
